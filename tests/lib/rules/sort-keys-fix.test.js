@@ -9,7 +9,6 @@
 // Requirements
 // ------------------------------------------------------------------------------
 
-const path = require('path')
 const rule = require('../../../lib/rules/sort-keys-fix')
 const RuleTester = require('eslint').RuleTester
 
@@ -767,9 +766,3 @@ const test = {
 const ruleTester = new RuleTester()
 
 ruleTester.run('sort-keys-fix', rule, test)
-
-const babelRuleTester = new RuleTester({
-  parser: path.resolve('node_modules/babel-eslint/lib/index.js'),
-})
-
-babelRuleTester.run('babel-eslint/sort-keys-fix', rule, test)

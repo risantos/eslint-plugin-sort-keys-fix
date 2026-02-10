@@ -16,28 +16,14 @@
   "scripts": {
     "lint": "eslint ./lib",
     "lint-fix": "eslint ./lib --fix",
-    "test": "jest",
-    "test-debug": "node --inspect node_modules/.bin/jest --watch --runInBand"
+    "test": "node --test tests/lib/rules/sort-keys-fix.test.js",
+    "test-debug": "node --watch --test tests/lib/rules/sort-keys-fix.test.js"
   },
   "dependencies": {
-    "espree": "^6.1.2",
-    "esutils": "^2.0.2",
-    "natural-compare": "^1.4.0",
-    "requireindex": "~1.2.0"
+    "natural-compare": "^1.4.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "~6.6.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-node": "^10.0.0",
-    "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.1",
-    "eslint-plugin-tyrecheck": "https://tycgitlab.tyrecheck.com/leonid.buneev/eslint-plugin-tyrecheck.git",
-    "jest": "^25.4.0",
-    "prettier": "^1.19.1"
+    "eslint": "^8.57.0"
   },
   "engines": {
     "node": ">=0.10.0"
